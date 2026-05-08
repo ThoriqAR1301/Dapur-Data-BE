@@ -3,6 +3,8 @@
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\CertificationController;
 
+require __DIR__.'/auth.php';
+
 Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('/portofolio', [PortfolioController::class, 'index']);
